@@ -6,6 +6,7 @@
 
 - download and install python 3.12.1
 - clone the repository.
+- in CMD
 - `python -m venv venv`
   to create virtual environment
 - `cd back`
