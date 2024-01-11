@@ -7,3 +7,4 @@ class NewPostSerializer(ModelSerializer):
     class Meta:
         model = NewPost
         fields = "__all__"
+
