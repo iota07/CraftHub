@@ -17,21 +17,21 @@ const LaptopNavbar = () => {
 
 const MobileNavbar = () => {
     return (
-        <div className='navbarContainer fixed bottom-0 left-0 right-0 flex w-full p-4 text-blue bg-yellow border border-t-blue-900/50'>
-            <a href="">
-                <GrHomeRounded className='w-1/4 h-7' />
+        <div className='navbarContainer fixed bottom-0 left-0 right-0 flex w-full justify-center items-center p-4 text-blue bg-yellow border border-t-blue-900/50'>
+            <a href="" className='w-1/5 h-7 flex justify-center items-center'>
+                <GrHomeRounded />
             </a>
-            <a href="">
-                <LuSearch className='w-1/4 h-7' />
+            <a href="" className='w-1/5 h-7 flex justify-center items-center'>
+                <LuSearch />
             </a>
-            <a href="">
-                <TbSquareRoundedPlus className='w-1/4 h-7' />
+            <a href="" className='w-1/5 h-7 flex justify-center items-center'>
+                <TbSquareRoundedPlus />
             </a>
-            <a href="">
-                <IoChatbubbleEllipsesOutline className='w-1/5 h-7' />
+            <a href="" className='w-1/5 h-7 flex justify-center items-center'>
+                <IoChatbubbleEllipsesOutline />
             </a>
-            <a href="">
-                <HiOutlineUser className='w-1/4 h-7' />
+            <a href="" className='w-1/5 h-7 flex justify-center items-center'>
+                <HiOutlineUser />
             </a>
         </div>
     );
