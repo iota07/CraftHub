@@ -71,4 +71,3 @@ def GetPostById(request):
         return Response(serializer.data)
     except NewPost.DoesNotExist:
         return Response({"Error": "The post does not exist"}, status=404)
-

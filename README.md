@@ -9,8 +9,8 @@
 - in CMD
 - `cd back`
   (CraftHub\back)
-  - `python -m venv venv`
-    to create virtual environment
+- `python -m venv venv`
+  to create virtual environment
 - `venv\Scripts\activate`
   to activate virtual environment
 - `pip install django`
