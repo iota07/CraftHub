@@ -5,7 +5,7 @@ import LoginForm from '../Components/LoginForm/LoginForm';
 const Register = () => {
     return (
         <header>
-            <LoginForm />
+            <SignInForm />
         </header>
     );
 };
