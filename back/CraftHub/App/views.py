@@ -45,7 +45,9 @@ def UpdatePost(request):
     post_id = request.data.get("post_id")
     get_new_title = request.data.get("new_title")
     get_new_postContent = request.data.get("new_content")
+    get_new_post_image = request.data.get("new_post_image")
     get_new_published = request.data.get("new_publish")
+
     try:
         post = NewPost.objects.get(id=post_id)
 
@@ -53,6 +55,8 @@ def UpdatePost(request):
             post.title = get_new_title
         if get_new_postContent:
             post.postContent = get_new_postContent
+        if get_new_post_image:
+            post.image = get_new_post_image
         if get_new_published:
             post.published = get_new_published
 
