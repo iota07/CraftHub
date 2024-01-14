@@ -15,6 +15,8 @@ urlpatterns = [
     path("delete-post/", views.DeletePost),
     path("get-post/", views.GetPostById),
     path("update-post/", views.UpdatePost),
+    # Users
+    path("search/", views.UserSearch, name="user-search"),
     # Authentication
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
