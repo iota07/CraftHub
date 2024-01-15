@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 
-const Home = () => {
+const About = () => {
     return (
         <div className='home w-full h-screen bg-yellow'>
             <Navbar />
@@ -9,4 +9,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default About;
