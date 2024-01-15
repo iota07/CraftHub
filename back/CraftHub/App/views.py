@@ -51,14 +51,12 @@ def DeletePost(request):
 @api_view(["PUT"])
 def UpdatePost(request):
     post_id = request.data.get("post_id")
-    get_new_title = request.data.get("new_title", "")
     get_new_post_content = request.data.get("new_content", "")
     get_new_post_image = request.data.get("new_post_image", "")
 
     try:
         post = NewPost.objects.get(id=post_id)
 
-        post.title = get_new_title
         post.postContent = get_new_post_content
         post.image = get_new_post_image
 
