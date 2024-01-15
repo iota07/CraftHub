@@ -7,9 +7,14 @@ from django.core.exceptions import ObjectDoesNotExist
 
 
 class NewPostSerializer(ModelSerializer):
+    image = serializers.SerializerMethodField()
+
     class Meta:
         model = NewPost
         fields = "__all__"
+
+    def get_image(self, obj):
+        return obj.full_image_url
 
 
 class UserSerializer(serializers.ModelSerializer):

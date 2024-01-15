@@ -8,6 +8,7 @@ export default {
         merienda: ["Merienda", "cursive"],
         permanent: ["Permanent Marker", "cursive"],
         dancing: ["Dancing Script", "cursive"],
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         yellow: "#fff9d6",

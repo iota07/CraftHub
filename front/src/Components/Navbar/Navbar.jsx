@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import TitleH1 from "../Logo/TitleH1";
 import Avatar from "../Profile/Avatar";
@@ -41,29 +41,28 @@ const MobileNavbar = () => {
 }
 
 const Navbar = () => {
-    const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-        const handleResize = () => {
-            const isMobileSize = window.matchMedia('(max-width: 768px)').matches;
-            setIsMobile(isMobileSize);
-        };
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobileSize = window.matchMedia("(max-width: 768px)").matches;
+      setIsMobile(isMobileSize);
+    };
 
-        handleResize();
+    handleResize();
 
-        window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    },
-    {});
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, {});
 
-    return (
-        <div className={`navbar ${isMobile ? 'mobile-navbar' : 'laptop-navbar'}`}>
-            {isMobile ? <MobileNavbar /> : <LaptopNavbar />}
-        </div>
-    );
-}
+  return (
+    <div className={`navbar ${isMobile ? "mobile-navbar" : "laptop-navbar"}`}>
+      {isMobile ? <MobileNavbar /> : <LaptopNavbar />}
+    </div>
+  );
+};
 
 export default Navbar;
