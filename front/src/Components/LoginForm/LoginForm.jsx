@@ -8,7 +8,7 @@ const LoginForm = () => {
     return (
         <div className=''>
             <form action="" className='bg-yellow text-blue p-8 '>
-                <h1 className='font-bold text-center py-4'>Log in</h1>
+                <h1 className='font-bold text-center py-4'>CraftHub</h1>
                 <div className="input-box flex justify-center item-center my-5">
                     <FaEnvelope className='icon mr-3' />
                     <input className='bg-blue' type="email" placeholder='Email' required />
