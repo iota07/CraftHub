@@ -5,10 +5,11 @@ import Salutation from "../Components/Salutation/Salutation";
 
 const Home = () => {
   return (
-    <div className="home w-full h-screen bg-yellow text-blue pt-24 md:pt-36 pl-6">
+    <div className="home w-full h-screen bg-yellow text-blue pt-24 md:pt-36 pl-6 flex">
       <Salutation username="Marine" />
       <TitleH2 title="Trending Now" />
       <Navbar />
+      <Posts image="../public/micro.jpg" title="" text="lorem epsum"/>
     </div>
   );
 };

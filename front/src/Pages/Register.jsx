@@ -4,7 +4,7 @@ import GDPRCookieConsent from "../Components/GDPR/GDPRCookieConsent";
 
 const Register = () => {
   return (
-    <main className="w-full h-screen bg-yellow">
+    <main>
       <GDPRCookieConsent />
       <LoginForm />
     </main>
