@@ -54,7 +54,7 @@ const GDPRCookieConsent = () => {
       >
         <div>
           <button
-            className="bg-yellow text-blue p-2 mb-4 w-24 rounded-lg top-0 left-0 w-full z-10"
+            className="bg-yellow text-blue p-2 mb-4 w-24 rounded-lg top-0 left-0 z-10"
             onClick={closeModal}
           >
             Close

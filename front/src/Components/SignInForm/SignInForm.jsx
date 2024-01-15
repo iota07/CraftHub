@@ -9,24 +9,50 @@ const SignInForm = () => {
   return (
     <div>
       <div className="bg-yellow flex justify-center items-center h-screen w-full">
-        <form className="lg:border-2  lg:border-blue lg:border-opacity-70 md:border-2 md:border-blue md:border-opacity-70 text-blue p-8 flex flex-col items-center text-xl" action="">
+        <form
+          className="lg:border-2  lg:border-blue lg:border-opacity-70 md:border-2 md:border-blue md:border-opacity-70 text-blue p-8 flex flex-col items-center text-xl"
+          action=""
+        >
           <TitleH1 title="CraftHub" />
           <div className="input-box mt-10 mb-5 flex justify-center">
-            <FaUser className="icon mr-3" />
-            <input className="bg-blue placeholder-yellow placeholder-opacity-80 rounded" type="text" placeholder="Username" required />
+            <FaUser className="icon mr-3 pt-1" />
+            <input
+              className="bg-blue placeholder-yellow placeholder-opacity-80 rounded pl-2"
+              type="text"
+              placeholder="Username"
+              required
+            />
           </div>
           <div className="input-box mb-5 flex justify-center">
-            <FaEnvelope className="icon mr-3" />
-            <input className="bg-blue placeholder-yellow placeholder-opacity-80 rounded" type="email" placeholder="Email" required />
+            <FaEnvelope className="icon mr-3 pt-1" />
+            <input
+              className="bg-blue placeholder-yellow placeholder-opacity-80 rounded pl-2"
+              type="email"
+              placeholder="Email"
+              required
+            />
           </div>
           <div className="input-box mb-4 flex justify-center">
-            <FaLock className="icon mr-3" />
-            <input className="bg-blue placeholder-yellow placeholder-opacity-80 rounded" type="password" placeholder="********" required />
+            <FaLock className="icon mr-3 pt-1" />
+            <input
+              className="bg-blue placeholder-yellow placeholder-opacity-80 rounded pl-2"
+              type="password"
+              placeholder="********"
+              required
+            />
           </div>
-          <button className="my-5 py-1 w-full text-yellow bg-orange rounded" type="submit">Sign in</button>
+          <button
+            className="my-5 py-1 w-full text-yellow bg-orange rounded-lg"
+            type="submit"
+          >
+            Sign in
+          </button>
           <div className="login-link">
             <p>
-              Have an account? <Link to="/login">Log in</Link>
+              Have an account?{" "}
+              <Link className="underline" to="/login">
+                Log in
+              </Link>
             </p>
           </div>
         </form>
