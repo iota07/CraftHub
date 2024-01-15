@@ -1,13 +1,14 @@
-import React from 'react';
-import SignInForm from '../Components/SignInForm/SignInForm';
-import LoginForm from '../Components/LoginForm/LoginForm';
+import React from "react";
+import LoginForm from "../Components/LoginForm/LoginForm";
+import GDPRCookieConsent from "../Components/GDPR/GDPRCookieConsent";
 
 const Register = () => {
-    return (
-        <main>
-            <LoginForm />
-        </main>
-    );
+  return (
+    <main className="w-full h-screen bg-yellow">
+      <GDPRCookieConsent />
+      <LoginForm />
+    </main>
+  );
 };
 
 export default Register;
