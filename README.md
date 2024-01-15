@@ -6,6 +6,7 @@
 
 - download and install python 3.12.1
 - clone the repository.
+- in CMD
 - `cd back`
   (CraftHub\back)
 - `python -m venv venv`
