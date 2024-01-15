@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginForm from '../LoginForm/LoginForm';
+import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
@@ -24,7 +24,7 @@ const SignInForm = () => {
                     </div>
                     <button type="submit">Register</button>
                     <div className="login-link">
-                        <p>Have an account? <a href={LoginForm}>Log in</a></p>
+                        <p>Have an account? <Link to="/login">Log in</Link></p>
                     </div>
                 </form>
             </div>

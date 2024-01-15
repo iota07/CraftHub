@@ -4,9 +4,9 @@ import LoginForm from '../Components/LoginForm/LoginForm';
 
 const Register = () => {
     return (
-        <header>
+        <main className='w-full h-screen bg-yellow'>
             <SignInForm />
-        </header>
+        </main>
     );
 };
 
