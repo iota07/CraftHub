@@ -10,7 +10,7 @@ const LoginForm = () => {
       <div className="bg-yellow flex justify-center items-center h-screen w-full">
         <form
           action=""
-          className="lg:border-2  lg:border-blue lg:border-opacity-70 md:border-2 md:border-blue md:border-opacity-70 text-xl  text-blue p-8 flex flex-col items-center"
+          className="lg:border-2  lg:border-blue lg:border-opacity-70 md:border-2 md:border-blue md:border-opacity-70 md:text-l lg:text-xl text-blue p-8 flex flex-col items-center"
         >
           <TitleH1 title="CraftHub" />
           <div className="input-box mt-10 mb-5 flex justify-center">

@@ -10,7 +10,7 @@ const SignInForm = () => {
     <div>
       <div className="bg-yellow flex justify-center items-center h-screen w-full">
         <form
-          className="lg:border-2  lg:border-blue lg:border-opacity-70 md:border-2 md:border-blue md:border-opacity-70 text-blue p-8 flex flex-col items-center text-xl"
+          className="lg:border-2  lg:border-blue lg:border-opacity-70 md:border-2 md:border-blue md:border-opacity-70 text-blue p-8 flex flex-col items-center md:text-l lg:text-xl"
           action=""
         >
           <TitleH1 title="CraftHub" />

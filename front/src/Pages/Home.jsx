@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import TitleH2 from "../Components/Title/TitleH2";
 import Salutation from "../Components/Salutation/Salutation";
+import Posts from "../Components/Posts/Posts";
 
 const Home = () => {
   return (
