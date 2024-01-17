@@ -21,20 +21,20 @@ const LaptopNavbar = () => {
 const MobileNavbar = () => {
     return (
         <nav className='navbarContainer fixed bottom-0 left-0 right-0 flex w-full justify-center items-center p-1 text-blue bg-yellow border border-t-blue border-opacity-50'>
-            <Link to="/home" className='w-1/5 h-10 flex justify-center items-center'>
-                <GrHomeRounded />
+            <Link to="/home" className='w-1/5 h-12 flex justify-center items-center'>
+                <GrHomeRounded className="w-7 h-7"/>
             </Link>
-            <Link to="/search" className='w-1/5 h-10 flex justify-center items-center'>
-                <LuSearch />
+            <Link to="/search" className='w-1/5 h-12 flex justify-center items-center'>
+                <LuSearch className="w-7 h-7"/>
             </Link>
-            <Link to="/post" className='w-1/5 h-10 flex justify-center items-center'>
-                <TbSquareRoundedPlus />
+            <Link to="/post" className='w-1/5 h-12 flex justify-center items-center'>
+                <TbSquareRoundedPlus className="w-7 h-7"/>
             </Link>
-            <Link to="/about" className='w-1/5 h-10 flex justify-center items-center'>
-                <IoChatbubbleEllipsesOutline />
+            <Link to="/about" className='w-1/5 h-12 flex justify-center items-center'>
+                <IoChatbubbleEllipsesOutline className="w-7 h-7"/>
             </Link>
-            <Link to="/profile" className='w-1/5 h-10 flex justify-center items-center'>
-                <HiOutlineUser />
+            <Link to="/profile" className='w-1/5 h-12 flex justify-center items-center'>
+                <HiOutlineUser className="w-7 h-7"/>
             </Link>
         </nav>
     );
