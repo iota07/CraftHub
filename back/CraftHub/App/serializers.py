@@ -20,10 +20,11 @@ class NewPostSerializer(ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     profile_pic = serializers.SerializerMethodField()
     bio = serializers.SerializerMethodField()
+    background = serializers.SerializerMethodField()
 
     class Meta:
         model = User
-        fields = ["username", "email", "profile_pic", "bio"]
+        fields = ["username", "password", "email", "profile_pic", "bio", "background"]
 
     def get_profile_pic(self, user):
         try:
@@ -36,5 +37,12 @@ class UserSerializer(serializers.ModelSerializer):
         try:
             account = Account.objects.get(user=user)
             return account.Bio if account else None
+        except ObjectDoesNotExist:
+            return None
+
+    def get_background(self, user):
+        try:
+            account = Account.objects.get(user=user)
+            return account.Background.url if account else None
         except ObjectDoesNotExist:
             return None

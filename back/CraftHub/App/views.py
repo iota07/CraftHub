@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from .models import NewPost
 from .serializers import NewPostSerializer, UserSerializer
 from django.contrib.auth.models import User
+from django.contrib.auth.hashers import make_password
 
 
 # Create your views here.
@@ -88,3 +89,13 @@ def UserSearch(request):
 
     serializer = UserSerializer(users, many=True)
     return Response({"users": serializer.data})
+
+
+@api_view(["POST"])
+def register_user(request):
+    request.data["password"] = make_password(request.data["password"])
+    serializer = UserSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data, status=201)
+    return Response(serializer.errors, status=400)
