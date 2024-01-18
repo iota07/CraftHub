@@ -32,6 +32,11 @@
   ![Alt text](image-3.png)
 - `pip install -r requirements.txt`
 
+#### .env
+
+- inside \back\CraftHub\
+- create your .env file
+
 #### run server
 
 - `python manage.py runserver`
