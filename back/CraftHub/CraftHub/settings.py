@@ -28,7 +28,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = ["https://crafthub-server.onrender.com", "81.164.84.77"]
+ALLOWED_HOSTS = ["crafthub-server.onrender.com", "81.164.84.77"]
 
 
 # Application definition
