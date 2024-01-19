@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
+    "django.contrib.staticfiles",
 ]
 
 CORS_ORIGIN_ALLOW_ALL = False
@@ -73,6 +74,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django.contrib.staticfiles.middleware.StaticFilesMiddleware",
 ]
 
 ROOT_URLCONF = "CraftHub.urls"
