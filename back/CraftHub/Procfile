@@ -1,1 +1,1 @@
-web: gunicorn CraftHub.wsgi
+web: gunicorn CraftHub.wsgi --static-map /static=staticfiles
