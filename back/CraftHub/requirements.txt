@@ -9,6 +9,7 @@ django-cors-headers==4.3.1
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
 dnspython==2.4.2
+gunicorn==21.2.0
 idna==3.6
 packaging==23.2
 pillow==10.2.0
