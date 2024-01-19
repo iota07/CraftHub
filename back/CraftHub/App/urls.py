@@ -22,4 +22,8 @@ urlpatterns = [
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     # Registration
     path("register/", views.register_user, name="register_user"),
+    # Login
+    path("login/", views.login_view, name="login"),
+    # Logout
+    path("logout/", views.logout_view, name="logout"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

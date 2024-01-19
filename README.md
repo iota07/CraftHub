@@ -2,7 +2,7 @@
 
 ## Back install
 
-### install server
+### install Django server
 
 #### Install Python
 
@@ -17,14 +17,14 @@
   ![Alt text](image-2.png)
 - `python -m venv venv`
   to create virtual environment
-- `venv\Scripts\activate`
+
+- to activate virtual environment:
+  `venv\Scripts\activate`
   ![Alt text](image-1.png)
-  to activate virtual environment
-  ![Alt text](image.png)
 
-#### Project
+#### Setup Project inside the virtual environment
 
-- Once inside the environment:
+- Once inside the environment: ![Alt text](image.png)
 - `pip install django`
 - `python.exe -m pip install --upgrade pip`
   inside the back folder
@@ -42,6 +42,45 @@
 - `python manage.py runserver`
 - ctrl+click on localhost link.
 
-#### to deactivate the environement
+Note: When finish, to deactivate the environment type:
 
 - `venv\Scripts\deactivate`
+
+## API routes
+
+### Post CRUD
+
+- get-all-posts/  
+  GET request, to get all post in the database.
+- create-new-post/
+  POST request, to create a new post.
+- delete-post/
+  DELETE request, to delete a post by "post_id".
+- update-post/
+  PUT request, to update a post by "post_id".
+- get-post/
+  GET request, to search a post by "post_id".
+
+### users
+
+- search/
+  GET request, with query parameter.
+  - search/
+    to get all users.
+  - search/?query={username}
+    to get a specific user.
+
+### Registration
+
+- register/
+  POST request, to register a new user. payload: {"username","password","email"}
+
+### Login
+
+- login/
+  POST request, to login and retrieve access token and refresh token. payload {"username","password"}
+
+### Logout
+
+- logout/
+  POST request, to logout. payload {"refresh_token"}
