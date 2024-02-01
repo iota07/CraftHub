@@ -14,6 +14,17 @@
 - clone the repository.
 - in CMD
 - `cd back`
+  (CraftHub\back)
+  - `python -m venv venv`
+    to create virtual environment
+- `cd back`
+  (CraftHub\back)
+- `python -m venv venv`
+  to create virtual environment
+- `venv\Scripts\activate`
+  to activate virtual environment
+- in CMD
+- `cd back`
   ![Alt text](image-2.png)
 - `python -m venv venv`
   to create virtual environment
@@ -54,11 +65,11 @@ Note: When finish, to deactivate the environment type:
   GET request, to get all post in the database.
 - create-new-post/
   POST request, to create a new post.
-- delete-post/
+- delete-post/  
   DELETE request, to delete a post by "post_id".
-- update-post/
+- update-post/  
   PUT request, to update a post by "post_id".
-- get-post/
+- get-post/  
   GET request, to search a post by "post_id".
 
 ### users
@@ -84,3 +95,8 @@ Note: When finish, to deactivate the environment type:
 
 - logout/
   POST request, to logout. payload {"refresh_token"}
+
+## Database ER diagram
+
+Diagram by Graphivz
+![Alt text](erd-1.png)
