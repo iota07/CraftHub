@@ -14,18 +14,7 @@ Backend live [demo](https://crafthub-server.onrender.com/)
 #### Install the python environment
 
 - clone the repository.
-- in CMD
-- `cd back`
-  (CraftHub\back)
-  - `python -m venv venv`
-    to create virtual environment
-- `cd back`
-  (CraftHub\back)
-- `python -m venv venv`
-  to create virtual environment
-- `venv\Scripts\activate`
-  to activate virtual environment
-- in CMD
+- in CMD - in administrator mode
 - `cd back`
   ![Alt text](image-2.png)
 - `python -m venv venv`
